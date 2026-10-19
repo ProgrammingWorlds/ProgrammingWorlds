@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Programming Worlds | We Build Digital Worlds.</title>
+    <meta name="description"
+        content="Programming Worlds builds distinctive websites, mobile apps, custom software, e-commerce experiences and NFC/QR menus. Beyond Code. Beyond Limits.">
+    <meta name="theme-color" content="#040611">
+    <meta property="og:title" content="Programming Worlds — We Build Digital Worlds.">
+    <meta property="og:description"
+        content="Websites, mobile apps, custom software and NFC/QR experiences. Beyond Code. Beyond Limits.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Programming Worlds">
+    <meta name="twitter:image" content="assets/og-image.png">
+    <script src="motion-core.js"></script>
+    <script src="loader.js"></script>
+    <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+    <link rel="preload" as="image" href="assets/universe.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cinematic.css">
+    <script src="site-content.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="vendor/gsap.min.js" defer></script>
+    <script src="vendor/ScrollTrigger.min.js" defer></script>
+    <script src="vendor/three.min.js" defer></script>
+    <script src="world-engine.js" defer></script>
+    <script src="experience.js" defer></script>
+</head>
+
+<body>
+    <div id="site-loader" class="site-loader" aria-hidden="true">
+        <div class="loader-world">
+            <div class="loader-halo"></div>
+            <div class="loader-orbit"></div><img src="assets/pw-mark-320.webp" alt="" width="240" height="240"><span
+                class="loader-wordmark">PROGRAMMING <b>WORLDS</b></span><span class="loader-signature">BEYOND CODE.
+                BEYOND LIMITS.</span>
+            <div class="loader-light"></div>
+        </div>
+    </div>
+    <div class="ambient-field" aria-hidden="true"></div>
+    <div class="cosmos-layer" aria-hidden="true"><canvas id="world-canvas"></canvas></div>
+    <div class="cursor-fx" aria-hidden="true"><i class="cursor-dot"></i><i class="cursor-ring"></i><i
+            class="cursor-trail"></i><i class="cursor-trail"></i><i class="cursor-trail"></i></div><button
+        id="motion-toggle" class="motion-toggle" type="button" aria-pressed="false">Pause effects</button>
+    <a class="skip" href="#main" data-i="skip">Skip to content</a>
+    <div class="reading-progress" aria-hidden="true"></div>
+    <header class="header"><a class="brand" href="#home" aria-label="Programming Worlds home"><img
+                src="assets/pw-mark-320.webp" alt="" width="54" height="54"><span>PROGRAMMING<small>W O R L D
+                    S</small></span></a>
+        <nav id="navigation" aria-label="Main navigation"><a href="#home"><span data-i="home">Home</span></a><a
+                href="#services"><span data-i="services">Services</span></a><a href="#process"><span
+                    data-i="process">Approach</span></a><a href="#about"><span data-i="about">About</span></a><a
+                href="#contact"><span data-i="contact">Contact</span></a></nav>
+        <div class="header-actions"><button class="language" id="language"
+                aria-label="Switch to Arabic">عربي</button><button class="button primary header-cta" data-inquiry><span
+                    data-i="start">Start a project</span><span aria-hidden="true">↗</span></button><button
+                id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="navigation"
+                aria-label="Open menu"><span></span><span></span></button></div>
+    </header>
+    <aside class="chapter-rail" aria-label="Page chapters"><a href="#home" aria-label="Home"><span>01</span></a><a
+            href="#services" aria-label="Services"><span>02</span></a><a href="#process"
+            aria-label="Approach"><span>03</span></a><a href="#about" aria-label="About"><span>04</span></a><a
+            href="#contact" aria-label="Contact"><span>05</span></a></aside>
+    <main id="main">
+        <section id="home" class="hero">
+            <div class="hero-scene" aria-hidden="true"><img class="hero-background" src="assets/universe.webp" alt=""
+                    width="1536" height="1024" fetchpriority="high">
+                <div class="hero-shade"></div>
+            </div>
+            <div class="hero-orbit-stage" aria-hidden="true">
+                <div class="logo-rig">
+                    <div class="logo-aura"></div>
+                    <div class="logo-orbit orbit-back"></div>
+                    <div class="planet-brand">
+                        <div class="logo-depth"><img class="hero-logo" src="assets/pw-mark-640.webp"
+                                srcset="assets/pw-mark-320.webp 320w, assets/pw-mark-640.webp 640w"
+                                sizes="(max-width:600px) 194px, (max-width:1000px) 250px, 330px" alt="" width="900"
+                                height="900" decoding="async"></div><strong>PROGRAMMING</strong><span>W O R L D S</span>
+                    </div>
+                    <div class="logo-orbit orbit-front"></div><span class="orbit-caption">BEYOND CODE. BEYOND
+                        LIMITS.</span>
+                </div>
+            </div>
+            <div class="hero-content container"><span class="eyebrow pill"><i></i><span data-i="heroBadge">SOFTWARE.
+                        DESIGN. POSSIBILITY.</span></span>
+                <h1><span data-i="weBuild">WE BUILD</span><span class="gradient" data-i="digital">DIGITAL</span><span
+                        class="gradient second" data-i="worlds">WORLDS.</span></h1>
+                <p data-i="heroCopy">Distinctive websites. Intuitive apps. Software built around your business. Let’s
+                    create your next digital world.</p>
+                <div class="actions"><button class="button primary" data-inquiry><span data-i="start">Start a
+                            project</span><span aria-hidden="true">↗</span></button><a class="button secondary"
+                        href="#services"><span data-i="explore">Discover our services</span><span
+                            aria-hidden="true">↗</span></a></div>
+                <div class="hero-values"><span data-i="heroFoot">BEYOND CODE. BEYOND LIMITS.</span></div>
+            </div><a class="scroll-cue" href="#services"><span class="mouse"></span><span data-i="scroll">ENTER OUR
+                    WORLD</span></a><span class="hero-coordinate" aria-hidden="true">PW / DIGITAL UNIVERSE — 01</span>
+        </section>
+        <section id="services" class="services-section">
+            <div class="services-pin">
+                <div class="container service-heading">
+                    <div><span data-i="servicesLabel" class="eyebrow">WHAT WE CREATE</span>
+                        <h2 data-i="servicesTitle">Choose your next world.</h2>
+                    </div>
+                    <div class="service-controls"><button class="round-button" id="service-prev"
+                            aria-label="Previous service">←</button><span id="service-position">01 / 05</span><button
+                            class="round-button" id="service-next" aria-label="Next service">→</button></div>
+                </div>
+                <div class="service-window">
+                    <div class="service-track" id="service-grid">
+                        <article class="service-panel container" data-panel="0" aria-labelledby="service-title-0">
+                            <div class="service-copy">
+                                <div class="service-kicker"><span>01 / 05</span><span data-i="serviceName0">Website
+                                        development</span></div>
+                                <h3 id="service-title-0"><span data-i="serviceHeadline0">Websites that make an
+                                        impression.</span></h3>
+                                <p data-i="serviceCopy0">From a focused landing page to an immersive web experience,
+                                    give your business a digital presence that feels like you.</p>
+                                <ul class="service-features">
+                                    <li data-i="feature00">Corporate websites &amp; portfolios</li>
+                                    <li data-i="feature01">Landing pages &amp; responsive experiences</li>
+                                    <li data-i="feature02">Immersive 3D sites &amp; web apps</li>
+                                </ul><button class="button primary" data-service="0"><span data-i="serviceCta0">Explore
+                                        this service</span> ↗</button>
+                            </div>
+                            <div class="service-visual" data-pointer-card aria-hidden="true"><span
+                                    class="visual-orbit orbit-a"></span><span class="visual-orbit orbit-b"></span>
+                                <div class="service-object">
+                                    <div class="service-art">
+                                        <div class="mini-laptop">
+                                            <div class="screen-top"></div>
+                                            <div class="code-line"></div>
+                                            <div class="code-line"></div>
+                                            <div class="code-line"></div>
+                                        </div>
+                                    </div>
+                                </div><span class="visual-caption">PROGRAMMING WORLDS / WEB</span>
+                            </div>
+                        </article>
+                        <article class="service-panel container" data-panel="1" aria-labelledby="service-title-1">
+                            <div class="service-copy">
+                                <div class="service-kicker"><span>02 / 05</span><span data-i="serviceName1">Mobile
+                                        applications</span></div>
+                                <h3 id="service-title-1"><span data-i="serviceHeadline1">Your idea. In their
+                                        hands.</span></h3>
+                                <p data-i="serviceCopy1">Turn everyday tasks into a clear, useful mobile experience with
+                                    thoughtful interfaces and connected functionality.</p>
+                                <ul class="service-features">
+                                    <li data-i="feature10">Android &amp; iOS application planning</li>
+                                    <li data-i="feature11">Cross-platform interfaces</li>
+                                    <li data-i="feature12">Backend integrations</li>
+                                </ul><button class="button primary" data-service="1"><span data-i="serviceCta1">Explore
+                                        this service</span> ↗</button>
+                            </div>
+                            <div class="service-visual" data-pointer-card aria-hidden="true"><span
+                                    class="visual-orbit orbit-a"></span><span class="visual-orbit orbit-b"></span>
+                                <div class="service-object">
+                                    <div class="service-art">
+                                        <div class="phone second-phone"></div>
+                                        <div class="phone"></div>
+                                    </div>
+                                </div><span class="visual-caption">PROGRAMMING WORLDS / APPS</span>
+                            </div>
+                        </article>
+                        <article class="service-panel container" data-panel="2" aria-labelledby="service-title-2">
+                            <div class="service-copy">
+                                <div class="service-kicker"><span>03 / 05</span><span data-i="serviceName2">Custom
+                                        software</span></div>
+                                <h3 id="service-title-2"><span data-i="serviceHeadline2">Software that fits the way you
+                                        work.</span></h3>
+                                <p data-i="serviceCopy2">Bring your information, tasks and workflows together with tools
+                                    designed around your business.</p>
+                                <ul class="service-features">
+                                    <li data-i="feature20">Internal tools, dashboards &amp; databases</li>
+                                    <li data-i="feature21">Booking systems &amp; customer portals</li>
+                                    <li data-i="feature22">Workflow applications</li>
+                                </ul><button class="button primary" data-service="2"><span data-i="serviceCta2">Explore
+                                        this service</span> ↗</button>
+                            </div>
+                            <div class="service-visual" data-pointer-card aria-hidden="true"><span
+                                    class="visual-orbit orbit-a"></span><span class="visual-orbit orbit-b"></span>
+                                <div class="service-object">
+                                    <div class="service-art">
+                                        <div class="panels">
+                                            <div class="screen-top"></div>
+                                            <div class="code-line"></div>
+                                            <div class="code-line"></div>
+                                        </div>
+                                    </div>
+                                </div><span class="visual-caption">PROGRAMMING WORLDS / DESIGN</span>
+                            </div>
+                        </article>
+                        <article class="service-panel container" data-panel="3" aria-labelledby="service-title-3">
+                            <div class="service-copy">
+                                <div class="service-kicker"><span>04 / 05</span><span data-i="serviceName3">Digital
+                                        &amp; NFC menus</span></div>
+                                <h3 id="service-title-3"><span data-i="serviceHeadline3">A better menu starts with a
+                                        tap.</span></h3>
+                                <p data-i="serviceCopy3">Help guests explore your menu on their phones with NFC and QR
+                                    access, clear categories and easy content updates.</p>
+                                <ul class="service-features">
+                                    <li data-i="feature30">NFC &amp; QR-powered menus</li>
+                                    <li data-i="feature31">Interactive catalogs</li>
+                                    <li data-i="feature32">Restaurant &amp; café websites</li>
+                                </ul><button class="button primary" data-service="3"><span data-i="serviceCta3">Explore
+                                        this service</span> ↗</button>
+                            </div>
+                            <div class="service-visual" data-pointer-card aria-hidden="true"><span
+                                    class="visual-orbit orbit-a"></span><span class="visual-orbit orbit-b"></span>
+                                <div class="service-object">
+                                    <div class="service-art">
+                                        <div class="phone"></div>
+                                        <div class="nfc-card"><svg viewBox="0 0 32 32">
+                                                <path
+                                                    d="M10 11a8 8 0 0 1 0 10M15 7a14 14 0 0 1 0 18M20 3a20 20 0 0 1 0 26" />
+                                            </svg></div>
+                                    </div>
+                                </div><span class="visual-caption">PROGRAMMING WORLDS / NFC</span>
+                            </div>
+                        </article>
+                        <article class="service-panel container" data-panel="4" aria-labelledby="service-title-4">
+                            <div class="service-copy">
+                                <div class="service-kicker"><span>05 / 05</span><span
+                                        data-i="serviceName4">E-commerce</span></div>
+                                <h3 id="service-title-4"><span data-i="serviceHeadline4">Give your products a place to
+                                        grow.</span></h3>
+                                <p data-i="serviceCopy4">Connect product discovery, browsing and checkout in a shopping
+                                    experience shaped around your store.</p>
+                                <ul class="service-features">
+                                    <li data-i="feature40">Online stores &amp; product catalogs</li>
+                                    <li data-i="feature41">Checkout integration</li>
+                                    <li data-i="feature42">Inventory-connected experiences</li>
+                                </ul><button class="button primary" data-service="4"><span data-i="serviceCta4">Explore
+                                        this service</span> ↗</button>
+                            </div>
+                            <div class="service-visual" data-pointer-card aria-hidden="true"><span
+                                    class="visual-orbit orbit-a"></span><span class="visual-orbit orbit-b"></span>
+                                <div class="service-object">
+                                    <div class="service-art">
+                                        <div class="mini-laptop">
+                                            <div class="screen-top"></div>
+                                            <div class="code-line"></div>
+                                            <div class="code-line"></div>
+                                            <div class="code-line"></div>
+                                        </div>
+                                    </div>
+                                </div><span class="visual-caption">PROGRAMMING WORLDS / WEB</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="container service-pagination">
+                    <div class="service-dots" aria-label="Choose a service"><button data-service-jump="0"
+                            aria-label="Website development" aria-current="true"><span>01</span></button><button
+                            data-service-jump="1" aria-label="Mobile applications"><span>02</span></button><button
+                            data-service-jump="2" aria-label="Custom software"><span>03</span></button><button
+                            data-service-jump="3" aria-label="Digital & NFC menus"><span>04</span></button><button
+                            data-service-jump="4" aria-label="E-commerce"><span>05</span></button></div><span
+                        data-i="serviceScroll" class="service-scroll-hint">SCROLL TO DISCOVER</span>
+                    <div class="service-progress" aria-hidden="true"><i></i></div>
+                </div>
+            </div>
+        </section>
+        <section id="process" class="approach-section">
+            <div class="approach-pin container">
+                <div class="approach-copy"><span data-i="approachLabel" class="eyebrow">HOW WE WORK</span>
+                    <h2><span data-i="approachLine1">A clear direction.</span><br><span data-i="approachLine2"
+                            class="gradient">A considered result.</span></h2>
+                    <div class="approach-steps">
+                        <article class="approach-step" data-step="0"><span class="approach-number">01</span>
+                            <div>
+                                <h3 data-i="stepTitle0">Understand what matters.</h3>
+                                <p data-i="stepCopy0">We start with your goals, your audience and the problem you want
+                                    to solve.</p>
+                            </div>
+                        </article>
+                        <article class="approach-step" data-step="1"><span class="approach-number">02</span>
+                            <div>
+                                <h3 data-i="stepTitle1">Shape the experience.</h3>
+                                <p data-i="stepCopy1">We connect structure, visual design and interaction before
+                                    bringing the product to life.</p>
+                            </div>
+                        </article>
+                        <article class="approach-step" data-step="2"><span class="approach-number">03</span>
+                            <div>
+                                <h3 data-i="stepTitle2">Build. Refine. Launch.</h3>
+                                <p data-i="stepCopy2">We develop, test and prepare your solution for the people who will
+                                    use it.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="approach-visual" aria-hidden="true">
+                    <div class="assembly-fallback"><i></i><i></i><i></i><img src="assets/pw-mark-320.webp" alt=""
+                            width="320" height="320"></div><span class="assembly-label" id="assembly-label">01 /
+                        DISCOVER</span>
+                    <div class="assembly-line"><i></i></div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-story section">
+            <div class="container about-story-grid">
+                <div class="story-mark" aria-hidden="true">
+                    <div class="story-orbit"></div><img src="assets/pw-mark-640.webp" width="640" height="640" alt=""
+                        loading="lazy">
+                </div>
+                <div class="story-copy"><span data-i="aboutLabel" class="eyebrow">MEET PROGRAMMING WORLDS</span>
+                    <h2 class="split-headline"><span data-i="aboutTitle">Creative minds.</span><br><span
+                            data-i="aboutTitle2" class="gradient">Practical technology.</span></h2>
+                    <p data-i="aboutText">We’re a software and digital solutions startup bringing development and design
+                        together. We work with individuals, startups and businesses to create websites, applications and
+                        tools built around real needs.</p>
+                    <div class="story-principles"><span data-i="principle1">Your goals guide the build.</span><span
+                            data-i="principle2">Clear communication at every step.</span><span
+                            data-i="principle3">Design and development, together.</span></div><a class="text-button"
+                        href="#contact"><span data-i="aboutCta">Let’s talk about your idea</span> ↗</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <div class="contact-image" aria-hidden="true"></div>
+            <div class="container contact-inner"><span class="contact-orbit" aria-hidden="true"></span><span
+                    data-i="contactLabel" class="eyebrow">LET’S MAKE SOMETHING THAT MATTERS</span>
+                <h2><span data-i="contactLine1">What are you</span><br><span data-i="contactLine2"
+                        class="gradient">building next?</span></h2>
+                <p data-i="contactCopy">Tell us what you have in mind. We’ll explore the right way to bring it to life.
+                </p>
+                <div class="actions"><button class="button primary" data-inquiry><span data-i="start">Start a
+                            project</span> ↗</button><a class="button secondary"
+                        href="https://www.instagram.com/programming_worlds/" target="_blank"
+                        rel="noopener noreferrer"><span data-i="instagramCta">Talk to us on Instagram</span> ↗</a></div>
+                <span class="contact-handle">@programming_worlds</span>
+            </div>
+        </section>
+    </main>
+    <footer class="simple-footer">
+        <div class="container"><a class="brand" href="#home" aria-label="Programming Worlds home"><img
+                    src="assets/pw-mark-320.webp" width="44" height="44" alt=""><span>PROGRAMMING<small>W O R L D
+                        S</small></span></a><span class="footer-signature">BEYOND CODE. BEYOND LIMITS.</span>
+            <div class="footer-bottom"><span>© <span id="year">2026</span> Programming Worlds</span><button
+                    class="footer-link" data-legal="privacy"><span data-i="privacy">Privacy</span></button><a
+                    href="#home" class="back-top" aria-label="Back to top">↑</a></div>
+        </div>
+    </footer>
+
+    <dialog id="detail-dialog" aria-labelledby="detail-title"><button class="dialog-close"
+            aria-label="Close dialog">×</button><span class="eyebrow" id="detail-label"></span>
+        <h2 id="detail-title"></h2>
+        <p id="detail-copy"></p>
+        <ul id="detail-list"></ul><button class="button primary" id="detail-inquiry"><span data-i="discuss">Discuss this
+                idea</span> ↗</button>
+    </dialog>
+    <dialog id="inquiry-dialog" aria-labelledby="inquiry-title"><button class="dialog-close"
+            aria-label="Close dialog">×</button><span class="eyebrow" data-i="startSomething">LET’S GET STARTED</span>
+        <h2 id="inquiry-title" data-i="tellIdea">What would you like to build?</h2>
+        <p data-i="formIntro">Prepare your project brief, then send it to us on Instagram. This form does not send
+            automatically.</p>
+        <form id="inquiry-form"><label><span data-i="yourName">Your name</span><input name="name" required
+                    maxlength="80" autocomplete="name"></label><label><span data-i="need">What do you
+                    need?</span><select name="service" id="service-select"></select></label><label><span
+                    data-i="yourIdea">A little about your project</span><textarea name="idea" required minlength="10"
+                    maxlength="2000" rows="4"></textarea></label><button class="button primary" type="submit"><span
+                    data-i="prepare">Prepare my brief</span> ↗</button></form>
+        <div id="brief-result" hidden><label><span data-i="yourBrief">Your project brief</span><textarea id="brief-text"
+                    rows="6" readonly></textarea></label>
+            <div class="actions"><button class="button secondary" id="copy-brief" data-i="copy">Copy brief</button><a
+                    class="button primary" href="https://www.instagram.com/programming_worlds/" target="_blank"
+                    rel="noopener noreferrer" data-i="openInstagram">Open Instagram ↗</a></div>
+            <p id="copy-status" role="status"></p><button class="text-button" id="edit-brief" data-i="editBrief">Edit
+                brief</button>
+        </div>
+    </dialog>
+</body>
+
+</html>
